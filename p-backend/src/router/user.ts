@@ -3,8 +3,10 @@ import { authMiddleWare } from "../middleware";
 
 const router = Router();
 
-router.post("/signup", (res, req)=> {
-    console.log("signup handler");
+router.post("/signup", async (req, res) => {
+    const body = req.body;
+
+
 })
 
 router.post("/signin", (res, req)=> {
